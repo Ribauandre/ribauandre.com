@@ -7,6 +7,7 @@ body, html {
 	font-family: 'Black Han Sans', sans-serif;
 }
 button {
+	position: absolute;
 	display: block;
 	box-sizing: border-box;
 	margin: 0 auto;
