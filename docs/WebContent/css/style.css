@@ -1,6 +1,9 @@
+@import url('https://fonts.googleapis.com/css?family=Black+Han+Sans');
+
 body, html {
 	height: 100%;
 	overflow:hidden;
+	font-family: 'Black Han Sans', sans-serif;
 }
 .bg {
 
