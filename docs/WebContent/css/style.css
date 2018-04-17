@@ -6,6 +6,31 @@ body, html {
 	overflow:hidden;
 	font-family: 'Black Han Sans', sans-serif;
 }
+button {
+	display: block;
+	box-sizing: border-box;
+	margin: 0 auto;
+	padding: 8px;
+	width: 80%;
+	max-width: 200px;
+	background: #fff;
+	/* fallback color for old browsers */
+	background: rgba(255, 255, 255, 0.5);
+	border-radius: 8px;
+	color: #fff;
+	text-align: center;
+	text-decoration: none;
+	letter-spacing: 1px;
+	transition: all 0.3s ease-out;
+	opacity: 0;
+	/* make things invisible upon start */
+	animation: fadeIn ease-in 1;
+	/* call our keyframe named fadeIn, use animattion ease-in and repeat it only 1 time */
+	animation-fill-mode: forwards;
+	/* this makes sure that after animation is done we remain at the last keyframe value (opacity: 1)*/
+	animation-duration: 0.2s;
+	animation-delay: 0.1s;
+}
 .bg {
 
 	width: 100%;
