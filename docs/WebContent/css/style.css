@@ -18,7 +18,7 @@ button {
 	color: #fff;
 	padding: 14px 20px;
 	margin: 8px 0;
-	width: 100%;
+	width: 15%;
 	font-weight: bold;
 	background: #007BB6;
 	border: 0;
@@ -47,6 +47,7 @@ button:active {
 }
 a{
 	text-decoration: none;
+	color: white;
 }
 
 
