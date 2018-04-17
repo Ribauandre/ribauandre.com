@@ -7,38 +7,30 @@ body, html {
 	font-family: 'Black Han Sans', sans-serif;
 }
 
-a,
-a:hover,
-a:focus {
-	color: inherit;
-	text-decoration: none;
-	transition: all 0.3s;
+a.button6{
+ display:inline-block;
+ padding:0.7em 1.4em;
+ margin:0 0.3em 0.3em 0;
+ border-radius:0.15em;
+ box-sizing: border-box;
+ text-decoration:none;
+ font-family:'Roboto',sans-serif;
+ text-transform:uppercase;
+ font-weight:400;
+ color:#FFFFFF;
+ background-color:#3369ff;
+ box-shadow:inset 0 -0.6em 0 -0.35em rgba(0,0,0,0.17);
+ text-align:center;
+ position:relative;
 }
-
-button {
-	display: block;
-	box-sizing: border-box;
-	margin: 0 auto;
-	padding: 8px;
-	width: 80%;
-	max-width: 200px;
-	background: #fff;
-	/* fallback color for old browsers */
-	background: rgba(255, 255, 255, 0.5);
-	border-radius: 8px;
-	color: #fff;
-	text-align: center;
-	text-decoration: none;
-	letter-spacing: 1px;
-	transition: all 0.3s ease-out;
-	opacity: 0;
-	/* make things invisible upon start */
-	animation: fadeIn ease-in 1;
-	/* call our keyframe named fadeIn, use animattion ease-in and repeat it only 1 time */
-	animation-fill-mode: forwards;
-	/* this makes sure that after animation is done we remain at the last keyframe value (opacity: 1)*/
-	animation-duration: 0.2s;
-	animation-delay: 0.1s;
+a.button6:active{
+ top:0.1em;
+}
+@media all and (max-width:30em){
+ a.button6{
+  display:block;
+  margin:0.4em auto;
+ }
 }
 .bg {
 
