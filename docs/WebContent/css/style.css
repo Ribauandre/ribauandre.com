@@ -37,7 +37,9 @@ body, html {
 }
 .notice{
 	width :100%;
-	align: center;	
+	align: center;
+	right: 50%;
+	bottom: 50%;
 }
 
 @keyframes fadeIn {
