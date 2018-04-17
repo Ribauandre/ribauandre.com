@@ -6,10 +6,15 @@ body, html {
 	overflow:hidden;
 	font-family: 'Black Han Sans', sans-serif;
 }
-a {
-    text-decoration: none;
-    color: initial;
+
+a,
+a:hover,
+a:focus {
+	color: inherit;
+	text-decoration: none;
+	transition: all 0.3s;
 }
+
 button {
 	display: block;
 	box-sizing: border-box;
