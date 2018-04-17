@@ -1,16 +1,30 @@
 body, html {
     height: 100%;
 }
+.bg {
 
-.bg { 
-    /* The image used */
-    background-image: url("/WebContent/imgs/LandingBackground.jpg");
+	width: 100%;
+	height: 100%;
+	content: '';
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background-image: url("/WebContent/imgs/LandingBackground.jpg");
+	background-size: cover;
+}
 
-    /* Full height */
-    height: 100%; 
-
-    /* Center and scale the image nicely */
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+.bg::before {
+    content: '';
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background: linear-gradient(270deg, #0b94f2, #5bb2ee, #a6d5f5, #eaeff2);
+	opacity: .1;
+	-webkit-animation: AnimationName 6s ease infinite;
+	-moz-animation: AnimationName 6s ease infinite;
+	animation: AnimationName 6s ease infinite;
 }
