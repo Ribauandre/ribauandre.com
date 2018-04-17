@@ -22,25 +22,14 @@ body, html {
 	overflow:hidden;
 }
 
-.bg::before {
-    content: '';
-	position: absolute;
-	top: 0;
-	right: 0;
-	bottom: 0;
-	left: 0;
-	background: linear-gradient(270deg, #0b94f2, #5bb2ee, #a6d5f5, #eaeff2);
-	opacity: .1;
-	-webkit-animation: AnimationName 6s ease infinite;
-	-moz-animation: AnimationName 6s ease infinite;
-	animation: AnimationName 6s ease infinite;
-	overflow:hidden;
-}
 .notice{
 	width :100%;
 	align-content: center;
 	right: 50%;
 	bottom: 50%;
+}
+h2{
+	align-content: center;
 }
 
 @keyframes fadeIn {
