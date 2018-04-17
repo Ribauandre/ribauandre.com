@@ -28,6 +28,11 @@ body, html {
 	-moz-animation: AnimationName 6s ease infinite;
 	animation: AnimationName 6s ease infinite;
 }
+.notice{
+	width :100%;
+	align: center;	
+}
+
 @keyframes fadeIn {
 	from {
 		opacity: 0;
