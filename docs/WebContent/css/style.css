@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Black+Han+Sans');
 
 body, html {
+	align-content: center;
 	height: 100%;
 	overflow:hidden;
 	font-family: 'Black Han Sans', sans-serif;
@@ -37,7 +38,7 @@ body, html {
 }
 .notice{
 	width :100%;
-	align: center;
+	align-content: center;
 	right: 50%;
 	bottom: 50%;
 }
