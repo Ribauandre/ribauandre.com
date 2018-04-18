@@ -9,6 +9,9 @@ body, html {
 .infoContainer{
 	width: 40%;
 	height: 35%
+	-webkit-box-shadow: 4px 10px 80px 9px rgba(0,0,0,0.75);
+	-moz-box-shadow: 4px 10px 80px 9px rgba(0,0,0,0.75);
+	box-shadow: 4px 10px 80px 9px rgba(0,0,0,0.75);
 }
 button {
 	position: relative;
