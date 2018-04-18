@@ -6,6 +6,9 @@ body, html {
 	overflow: hidden;
 	font-family: 'Black Han Sans', sans-serif;
 }
+.infoContainer{
+		
+}
 button {
 	position: relative;
 	font-family: inherit;
@@ -18,7 +21,7 @@ button {
 	color: #fff;
 	padding: 14px 20px;
 	margin: 8px 0;
-	width: 15%;
+	width: 25%;
 	font-weight: bold;
 	background: #007BB6;
 	border: 0;
@@ -68,6 +71,7 @@ a{
 }
 
 .notice{
+	height : 100%;
 	width :100%;
 	text-align: center;
 	position absolute
