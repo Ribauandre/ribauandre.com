@@ -7,7 +7,8 @@ body, html {
 	font-family: 'Black Han Sans', sans-serif;
 }
 .infoContainer{
-		
+	width: 40%;
+	height: 35%
 }
 button {
 	position: relative;
