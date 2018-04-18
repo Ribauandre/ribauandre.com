@@ -7,12 +7,15 @@ body, html {
 	font-family: 'Black Han Sans', sans-serif;
 }
 .infoContainer{
-	width: 40%;
-	height: 35%;
-	bottom: 45%;
-	-webkit-box-shadow: 4px 10px 80px 9px rgba(0,0,0,0.75);
-	-moz-box-shadow: 4px 10px 80px 9px rgba(0,0,0,0.75);
-	box-shadow: 4px 10px 80px 9px rgba(0,0,0,0.75);
+    width: 60%;
+    height: 35%;
+    top: 30%;
+    left: 20%;
+    position: absolute;
+    background-color: rgba(22, 2, 100, 0.6);
+    -webkit-box-shadow: 4px 10px 80px 9px rgba(0,0,0,0.75);
+    -moz-box-shadow: 4px 10px 80px 9px rgba(0,0,0,0.75);
+    box-shadow: 4px 10px 80px 9px rgba(0,0,0,0.75);
 }
 button {
 	position: relative;
