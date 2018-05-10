@@ -14,16 +14,25 @@ html, body, h1, h2, h3, h4, h5, h6 {
 	
 }
 #tab{
- position: fixed;
-    white-space: nowrap;
+	
+ /* Abs positioning makes it not take up vert space */ 
+    position: absolute;
     top: 0;
-    right: 100%;
-    text-align: left;
-	background-color: #009688;
-    -webkit-transform-origin: 100% 100%;
-    -webkit-transform: rotate(-90deg);
-    transform-origin: 100% 100%;
-    transform: rotate(-90deg);
+    left: 0;
+    
+    /* Border is the new background */
+    background: none;
+    
+    /* Rotate from top left corner (not default) */
+    -webkit-transform-origin: 0 0;
+    -moz-transform-origin:    0 0;
+    -ms-transform-origin:     0 0;
+    -o-transform-origin:      0 0;
+    
+    -webkit-transform: rotate(90deg); 
+    -moz-transform:    rotate(90deg); 
+    -ms-transform:     rotate(90deg); 
+    -o-transform:      rotate(90deg); 
 	}
 .sidenav {
     height: 100%;
