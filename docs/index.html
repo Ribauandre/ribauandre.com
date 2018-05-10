@@ -11,82 +11,79 @@
 <style>
 html, body, h1, h2, h3, h4, h5, h6 {
 	font-family: "Roboto", sans-serif
-	
 }
-	#aside{
-		 position: relative;  
-		 margin: 0px 10px 10px 10px;
-		
-    
-    /* Make a little room */
-		
-	}
-#tab{
-	 transition: 0.5s;
-	 background: #009688;
-    color: #fff;
 
-    margin: 0px 10px 10px 10px;
- /* Abs positioning makes it not take up vert space */ 
-    position: absolute;
-    top: 0;
-        left:50px;
-	
-    
-    /* Border is the new background */
-    
-    /* Rotate from top left corner (not default) */
-    -webkit-transform-origin: 0 0;
-    -moz-transform-origin:    0 0;
-    -ms-transform-origin:     0 0;
-    -o-transform-origin:      0 0;
-    
-    -webkit-transform: rotate(90deg); 
-    -moz-transform:    rotate(90deg); 
-    -ms-transform:     rotate(90deg); 
-    -o-transform:      rotate(90deg); 
-	}
+#aside {
+	position: relative;
+	margin: 0px 10px 10px 10px;
+
+	/* Make a little room */
+}
+
+#tab {
+	transition: 0.5s;
+	background: #009688;
+	color: #fff;
+	margin: 0px 10px 10px 10px;
+	/* Abs positioning makes it not take up vert space */
+	position: absolute;
+	top: 0;
+	left: 50px;
+	/* Border is the new background */
+	/* Rotate from top left corner (not default) */
+	-webkit-transform-origin: 0 0;
+	-moz-transform-origin: 0 0;
+	-ms-transform-origin: 0 0;
+	-o-transform-origin: 0 0;
+	-webkit-transform: rotate(90deg);
+	-moz-transform: rotate(90deg);
+	-ms-transform: rotate(90deg);
+	-o-transform: rotate(90deg);
+}
+
 .sidenav {
-    height: 100%;
-    width: 0;
-    position: fixed;
-    z-index: 1;
-    top: 0;
-    left: 0;
-  background: rgb(0,80,73);
-background: linear-gradient(90deg, rgba(0,80,73,1) 0%, rgba(0,150,136,1) 64%);
-
-
-    overflow-x: hidden;
-    transition: 0.5s;
-    padding-top: 60px;
+	height: 100%;
+	width: 0;
+	position: fixed;
+	z-index: 1;
+	top: 0;
+	left: 0;
+	background: rgb(0, 80, 73);
+	background: linear-gradient(90deg, rgba(0, 80, 73, 1) 0%,
+		rgba(0, 150, 136, 1) 64%);
+	overflow-x: hidden;
+	transition: 0.5s;
+	padding-top: 60px;
 }
 
 .sidenav a {
-    padding: 8px 8px 8px 32px;
-    text-decoration: none;
-    font-size: 25px;
-    color: red;
-    display: block;
-    transition: 0.3s;
+	padding: 8px 8px 8px 32px;
+	text-decoration: none;
+	font-size: 25px;
+	color: red;
+	display: block;
+	transition: 0.3s;
 }
 
 .sidenav a:hover {
-    color: #f1f1f1;
+	color: #f1f1f1;
 }
 
 .sidenav .closebtn {
-
-    position: absolute;
-    top: 0;
-    right: 25px;
-    font-size: 36px;
-    margin-left: 50px;
+	position: absolute;
+	top: 0;
+	right: 25px;
+	font-size: 36px;
+	margin-left: 50px;
 }
 
 @media screen and (max-height: 450px) {
-  .sidenav {padding-top: 15px;}
-  .sidenav a {font-size: 18px;}
+	.sidenav {
+		padding-top: 15px;
+	}
+	.sidenav a {
+		font-size: 18px;
+	}
 }
 </style>
 <script>
@@ -107,9 +104,9 @@ function closeNav() {
 
 		<!-- The Grid -->
 		<div class="w3-row-padding">
-			
-				<!-- Left Column -->
-				
+
+			<!-- Left Column -->
+
 			<div class="w3-third">
 
 				<div class="w3-white w3-text-grey w3-card-4">
@@ -121,14 +118,16 @@ function closeNav() {
 						</div>
 					</div>
 					<div id="tab" onclick="openNav()">
-			<h3 id="aside" style="font-size:30px;cursor:pointer" >Projects</h3>
-			</div>
+						<h3 id="aside" style="font-size: 30px; cursor: pointer">Projects</h3>
+					</div>
 					<div class="w3-container">
 						<p>
 							<i
-								class="fa fa-briefcase fa-fw w3-margin-right w3-large w3-text-teal"></i>Developer						</p>
+								class="fa fa-briefcase fa-fw w3-margin-right w3-large w3-text-teal"></i>Developer
+						</p>
 						<p>
-							<i class="fa fa-home fa-fw w3-margin-right w3-large w3-text-teal"></i>New Jersey, USA
+							<i class="fa fa-home fa-fw w3-margin-right w3-large w3-text-teal"></i>New
+							Jersey, USA
 						</p>
 						<p>
 							<i
@@ -193,25 +192,46 @@ function closeNav() {
 
 				<!-- End Left Column -->
 			</div>
-		
+
 			<div id="mySidenav" class="sidenav">
-				<h2 style="color:white;">Projects</h3>
-  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-  <h3 style="color:white;">SkillsBank</h3>
-				<h6 class="w3-text-teal">
-							<i class="fa fa-calendar fa-fw w3-margin-right"></i>Jul 2017 - <span
-								class="w3-tag w3-teal w3-round">Current</span>
-						</h6>
-	<p style="color:white;">Utilizes full stack J2EE, AS400, and WebSphere, to deliver an application that allows an associate to rate themselves on many different subjects and gain recognition for what they may know while also allowing managers to identify gaps in skill and lead an associate to develop their skills. Led a team in an agile environment delegating sprints and holding SCRUM meetings to ensure strict deadlines were meet</p>
-  <h3 style="color:white;">Region Compare Utility</h3>
-				<h6 class="w3-text-teal">
-							<i class="fa fa-calendar fa-fw w3-margin-right"></i>Jul 2017 -
-							Jan 2018
-						</h6>
-	<p style="color:white;">This utility was made in a full stack JEE for use by the client services department to effectively compare multiple client regions across different LPARS. This is achieved by running as400 commands to create an overview object and then SQL commands to read in the data to java which then quantities and displays the differences between the regions in a simple and user friendly manner.</p>
-<h3 style="color:white;">About</h3>
-	<p style="color:white;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin in bibendum metus. Quisque id erat sapien. Donec elementum accumsan feugiat. Mauris porta, nunc eget vehicula blandit, metus mi congue velit, a vehicula leo massa in dolor. In tortor sapien, viverra non fringilla nec, fermentum quis leo. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Mauris dui ipsum, accumsan id odio in, blandit facilisis nulla.</p>			
-</div>
+				<h2 style="color: white;">
+					Projects
+					</h3>
+					<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+					<h3 style="color: white;">SkillsBank</h3>
+					<h6 class="w3-text-teal">
+						<i class="fa fa-calendar fa-fw w3-margin-right"></i>Jul 2017 - <span
+							class="w3-tag w3-teal w3-round">Current</span>
+					</h6>
+					<p style="color: white;">Utilizes full stack J2EE, AS400, and
+						WebSphere, to deliver an application that allows an associate to
+						rate themselves on many different subjects and gain recognition
+						for what they may know while also allowing managers to identify
+						gaps in skill and lead an associate to develop their skills. Led a
+						team in an agile environment delegating sprints and holding SCRUM
+						meetings to ensure strict deadlines were meet</p>
+					<h3 style="color: white;">Region Compare Utility</h3>
+					<h6 class="w3-text-teal">
+						<i class="fa fa-calendar fa-fw w3-margin-right"></i>Jul 2017 - Jan
+						2018
+					</h6>
+					<p style="color: white;">This utility was made in a full stack
+						JEE for use by the client services department to effectively
+						compare multiple client regions across different LPARS. This is
+						achieved by running as400 commands to create an overview object
+						and then SQL commands to read in the data to java which then
+						quantities and displays the differences between the regions in a
+						simple and user friendly manner.</p>
+					<h3 style="color: white;">About</h3>
+					<p style="color: white;">Lorem ipsum dolor sit amet,
+						consectetur adipiscing elit. Proin in bibendum metus. Quisque id
+						erat sapien. Donec elementum accumsan feugiat. Mauris porta, nunc
+						eget vehicula blandit, metus mi congue velit, a vehicula leo massa
+						in dolor. In tortor sapien, viverra non fringilla nec, fermentum
+						quis leo. Orci varius natoque penatibus et magnis dis parturient
+						montes, nascetur ridiculus mus. Mauris dui ipsum, accumsan id odio
+						in, blandit facilisis nulla.</p>
+			</div>
 			<!-- Right Column -->
 			<div class="w3-twothird">
 
@@ -281,9 +301,11 @@ function closeNav() {
 							<b>The Pennsylvania State University, University Park</b>
 						</h5>
 						<h6 class="w3-text-teal">
-							<i class="fa fa-calendar fa-fw w3-margin-right"></i>Graduated: May 2017
+							<i class="fa fa-calendar fa-fw w3-margin-right"></i>Graduated:
+							May 2017
 						</h6>
-						<p> Bachelor of Science: Information Sciences and Technology, Design and Development</p>
+						<p>Bachelor of Science: Information Sciences and Technology,
+							Design and Development</p>
 						<br>
 					</div>
 				</div>
@@ -296,15 +318,15 @@ function closeNav() {
 
 		<!-- End Page Container -->
 	</div>
-	
+
 
 
 
 
 	<footer class="w3-container w3-teal w3-center w3-margin-top">
 		<p>Find me on linkedin.</p>
-	 <i href="linkedin.com" class="fa fa-linkedin w3-hover-opacity"></i>
-	
+		<i href="linkedin.com" class="fa fa-linkedin w3-hover-opacity"></i>
+
 	</footer>
 
 </body>
