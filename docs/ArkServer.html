@@ -9,7 +9,99 @@
 <link rel='stylesheet'
 	href='https://fonts.googleapis.com/css?family=Roboto'>
 <link rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">\
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+            html, body, h1, h2, h3, h4, h5, h6 {
+                font-family: "Roboto", sans-serif
+            }
+            
+            #aside {
+                position: relative;
+                margin: 0px 10px 10px 10px;
+            
+                /* Make a little room */
+            }
+            
+            #tab {
+                box-shadow: 4px 0 8px 0 rgba(0, 0, 0, 0.2),6px  0 20px 0 rgba(0, 0, 0, 0.19);
+                transition: 0.5s;
+                background: #009688;
+                color: #fff;
+                margin: 0px 10px 10px 10px;
+                /* Abs positioning makes it not take up vert space */
+                position: absolute;
+                top: 0;
+                left: 50px;
+                /* Border is the new background */
+                /* Rotate from top left corner (not default) */
+                -webkit-transform-origin: 0 0;
+                -moz-transform-origin: 0 0;
+                -ms-transform-origin: 0 0;
+                -o-transform-origin: 0 0;
+                -webkit-transform: rotate(90deg);
+                -moz-transform: rotate(90deg);
+                -ms-transform: rotate(90deg);
+                -o-transform: rotate(90deg);
+            }
+            
+            .sidenav {
+                margin: 0 8px;
+                height: 100%;
+                width: 0;
+                position: fixed;
+                z-index: 1;
+                top: 0;
+                left: 0;
+                background: rgb(0, 80, 73);
+                background: linear-gradient(90deg, rgba(0, 80, 73, 1) 0%,
+                    rgba(0, 150, 136, 1) 64%);
+                overflow-x: hidden;
+                transition: 0.5s;
+                padding-top: 25px;
+            
+                box-shadow: 4px 0 8px 0 rgba(0, 0, 0, 0.2),6px  0 20px 0 rgba(0, 0, 0, 0.19);
+            }
+            
+            .sidenav p {
+                
+                padding: 10px 10px 10px 10px;
+                display: block;
+                transition: 0.3s;
+            }
+            .sidenav h6 {
+                
+                padding: 8px 8px 8px 8px;
+                display: block;
+                transition: 0.3s;
+            }
+            .sidenav h3 {
+                
+                padding: 5px 5px 5px 5px;
+                display: block;
+                transition: 0.3s;
+            }
+            
+            .sidenav a:hover {
+                color: #f1f1f1;
+            }
+            
+            .sidenav .closebtn {
+                position: absolute;
+                top: 0;
+                right: 25px;
+                font-size: 36px;
+                margin-left: 50px;
+            }
+            
+            @media screen and (max-height: 450px) {
+                .sidenav {
+                    padding-top: 15px;
+                }
+                .sidenav a {
+                    font-size: 18px;
+                }
+            }
+            </style>
     <body class="w3-light-grey">
     <h1>Dres Hot Server</h1>
     <br/>
