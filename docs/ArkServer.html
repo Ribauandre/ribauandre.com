@@ -1,219 +1,234 @@
 <!DOCTYPE html>
 <html>
-<title>Andre Ribau | ribauandre.com</title>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta property="og:image" content="./WebContent/imgs/IMG_5527.jpg" />
-<link rel="shortcut icon" type="favicon.ico" href="./WebContent/imgs/logo.jpg" />
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel='stylesheet'
-	href='https://fonts.googleapis.com/css?family=Roboto'>
-<link rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <style>
-            html{
-                font-family: "Roboto", sans-serif;
-                width: 100%;
-                height: 100%;
+  <title>Andre Ribau | ribauandre.com</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta property="og:image" content="./WebContent/imgs/IMG_5527.jpg" />
+  <link
+    rel="shortcut icon"
+    type="favicon.ico"
+    href="./WebContent/imgs/logo.jpg"
+  />
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+  <link
+    rel="stylesheet"
+    href="https://fonts.googleapis.com/css?family=Roboto"
+  />
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+  />
+  <style>
+    html {
+      font-family: "Roboto", sans-serif;
+      width: 100%;
+      height: 100%;
+    }
 
-            }
-            
-            #aside {
-                position: relative;
-                margin: 0px 10px 10px 10px;
-            
-                /* Make a little room */
-            }
-            
-            #tab {
-                box-shadow: 4px 0 8px 0 rgba(0, 0, 0, 0.2),6px  0 20px 0 rgba(0, 0, 0, 0.19);
-                transition: 0.5s;
-                background: #009688;
-                color: #fff;
-                margin: 0px 10px 10px 10px;
-                /* Abs positioning makes it not take up vert space */
-                position: absolute;
-                top: 0;
-                left: 50px;
-                /* Border is the new background */
-                /* Rotate from top left corner (not default) */
-                -webkit-transform-origin: 0 0;
-                -moz-transform-origin: 0 0;
-                -ms-transform-origin: 0 0;
-                -o-transform-origin: 0 0;
-                -webkit-transform: rotate(90deg);
-                -moz-transform: rotate(90deg);
-                -ms-transform: rotate(90deg);
-                -o-transform: rotate(90deg);
-            }
-            
-            .sidenav {
-                margin: 0 8px;
-                height: 100%;
-                width: 0;
-                position: fixed;
-                z-index: 1;
-                top: 0;
-                left: 0;
-                background: rgb(0, 80, 73);
-                background: linear-gradient(90deg, rgba(0, 80, 73, 1) 0%,
-                    rgba(0, 150, 136, 1) 64%);
-                overflow-x: hidden;
-                transition: 0.5s;
-                padding-top: 25px;
-            
-                box-shadow: 4px 0 8px 0 rgba(0, 0, 0, 0.2),6px  0 20px 0 rgba(0, 0, 0, 0.19);
-            }
-            
-            .sidenav p {
-                
-                padding: 10px 10px 10px 10px;
-                display: block;
-                transition: 0.3s;
-            }
-            .sidenav h6 {
-                
-                padding: 8px 8px 8px 8px;
-                display: block;
-                transition: 0.3s;
-            }
-            .sidenav h3 {
-                
-                padding: 5px 5px 5px 5px;
-                display: block;
-                transition: 0.3s;
-            }
-            
-            .sidenav a:hover {
-                color: #f1f1f1;
-            }
-            
-            .sidenav .closebtn {
-                position: absolute;
-                top: 0;
-                right: 25px;
-                font-size: 36px;
-                margin-left: 50px;
-            }
-            .headerPic{
-                width: 100%;
-                height: 300px;
-            }
-            .mainPanel{
-                width: 50%;
-                background-color: #ccc;
-                box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-                margin: 0 auto;
-            }
-            .app{
-                width: 100%;
-                height: 100%;
-                align-content: center;
-                background-image: url("./WebContent/imgs/ark-survival-evolved-2017-4k-5k-yh.jpg");
-                background-size: cover;
-                background-repeat: no-repeat;
-                
-            }
-            .textContainer{
-                padding: 10px;
-            }
-           
-            .button {
-  display: inline-block;
-  border-radius: 4px;
-  background-color: #f4511e;
-  border: none;
-  color: #FFFFFF;
-  text-align: center;
-  font-size: 28px;
-  padding: 20px;
-  width: 200px;
-  transition: all 0.5s;
-  cursor: pointer;
-  margin: 5px;
-}
+    #aside {
+      position: relative;
+      margin: 0px 10px 10px 10px;
 
-.button span {
-  cursor: pointer;
-  display: inline-block;
-  position: relative;
-  transition: 0.5s;
-}
+      /* Make a little room */
+    }
 
-.button span:after {
-  content: '\00bb';
-  position: absolute;
-  opacity: 0;
-  top: 0;
-  right: -20px;
-  transition: 0.5s;
-}
+    #tab {
+      box-shadow: 4px 0 8px 0 rgba(0, 0, 0, 0.2),
+        6px 0 20px 0 rgba(0, 0, 0, 0.19);
+      transition: 0.5s;
+      background: #009688;
+      color: #fff;
+      margin: 0px 10px 10px 10px;
+      /* Abs positioning makes it not take up vert space */
+      position: absolute;
+      top: 0;
+      left: 50px;
+      /* Border is the new background */
+      /* Rotate from top left corner (not default) */
+      -webkit-transform-origin: 0 0;
+      -moz-transform-origin: 0 0;
+      -ms-transform-origin: 0 0;
+      -o-transform-origin: 0 0;
+      -webkit-transform: rotate(90deg);
+      -moz-transform: rotate(90deg);
+      -ms-transform: rotate(90deg);
+      -o-transform: rotate(90deg);
+    }
 
-.button:hover span {
-  padding-right: 25px;
-}
+    .sidenav {
+      margin: 0 8px;
+      height: 100%;
+      width: 0;
+      position: fixed;
+      z-index: 1;
+      top: 0;
+      left: 0;
+      background: rgb(0, 80, 73);
+      background: linear-gradient(
+        90deg,
+        rgba(0, 80, 73, 1) 0%,
+        rgba(0, 150, 136, 1) 64%
+      );
+      overflow-x: hidden;
+      transition: 0.5s;
+      padding-top: 25px;
 
-.button:hover span:after {
-  opacity: 1;
-  right: 0;
-}
-.headContainer{
-    background-color: #646c7a;
-    width: 100%;
-    height: 100%;
-}
-.headContainer h1{
-    color: white;
-}
-            @media screen and (max-height: 450px) {
-                .sidenav {
-                    padding-top: 15px;
-                }
-                .sidenav a {
-                    font-size: 18px;
-                }
-            }
-            </style>
-            <script>
-            function myFunction() {
-                    var x = document.getElementById("myDIV");
-                    if (x.style.display === "none") {
-                      x.style.display = "block";
-                    } else {
-                      x.style.display = "none";
-                    }
-                  }</script>
-    <body class="app">
-        <div class="mainPanel">
-            <div class="headerPic" style="background-image: url(//survivetheark.com/applications/core/interface/file/index.php?file=/monthly_2018_12/mek_banner.jpg.eca6ca5c9331a6e7276a2b395edc36ca.jpg);"></div>
-        <div class="textContainer">
-            <div class="headContainer">
-            <h1>Dres Hot Server</h1>
+      box-shadow: 4px 0 8px 0 rgba(0, 0, 0, 0.2),
+        6px 0 20px 0 rgba(0, 0, 0, 0.19);
+    }
+
+    .sidenav p {
+      padding: 10px 10px 10px 10px;
+      display: block;
+      transition: 0.3s;
+    }
+    .sidenav h6 {
+      padding: 8px 8px 8px 8px;
+      display: block;
+      transition: 0.3s;
+    }
+    .sidenav h3 {
+      padding: 5px 5px 5px 5px;
+      display: block;
+      transition: 0.3s;
+    }
+
+    .sidenav a:hover {
+      color: #f1f1f1;
+    }
+
+    .sidenav .closebtn {
+      position: absolute;
+      top: 0;
+      right: 25px;
+      font-size: 36px;
+      margin-left: 50px;
+    }
+    .headerPic {
+      width: 100%;
+      height: 300px;
+    }
+    .mainPanel {
+      width: 50%;
+      background-color: #ccc;
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
+        0 6px 20px 0 rgba(0, 0, 0, 0.19);
+      margin: 0 auto;
+    }
+    .app {
+      width: 100%;
+      height: 100%;
+      align-content: center;
+      background-image: url("./WebContent/imgs/ark-survival-evolved-2017-4k-5k-yh.jpg");
+      background-size: cover;
+      background-repeat: no-repeat;
+    }
+    .textContainer {
+      padding: 10px;
+    }
+
+    .button {
+      display: inline-block;
+      border-radius: 4px;
+      background-color: #f4511e;
+      border: none;
+      color: #ffffff;
+      text-align: center;
+      font-size: 28px;
+      padding: 20px;
+      width: 200px;
+      transition: all 0.5s;
+      cursor: pointer;
+      margin: 5px;
+    }
+
+    .button span {
+      cursor: pointer;
+      display: inline-block;
+      position: relative;
+      transition: 0.5s;
+    }
+
+    .button span:after {
+      content: "\00bb";
+      position: absolute;
+      opacity: 0;
+      top: 0;
+      right: -20px;
+      transition: 0.5s;
+    }
+
+    .button:hover span {
+      padding-right: 25px;
+    }
+
+    .button:hover span:after {
+      opacity: 1;
+      right: 0;
+    }
+    .headContainer {
+      background-color: #646c7a;
+      width: 100%;
+      height: 100%;
+    }
+    .headContainer h1 {
+      color: white;
+    }
+    @media screen and (max-height: 450px) {
+      .sidenav {
+        padding-top: 15px;
+      }
+      .sidenav a {
+        font-size: 18px;
+      }
+    }
+  </style>
+  <script>
+    function myFunction() {
+      var x = document.getElementById("myDIV");
+      if (x.style.display === "none") {
+        x.style.display = "block";
+      } else {
+        x.style.display = "none";
+      }
+    }
+  </script>
+  <body class="app">
+    <div class="mainPanel">
+      <div
+        class="headerPic"
+        style="background-image: url(//survivetheark.com/applications/core/interface/file/index.php?file=/monthly_2018_12/mek_banner.jpg.eca6ca5c9331a6e7276a2b395edc36ca.jpg);"
+      ></div>
+      <div class="textContainer">
+        <div class="headContainer">
+          <h1>Dres Hot Server</h1>
         </div>
-    <br/>
-    <h2>Server Pass:</h2>
-    <button class="button" onclick="myFunction()">Click to reveal pass</button>
+        <br />
+        <h2>Server Pass:</h2>
+        <button class="button" onclick="myFunction()">
+          Click to reveal pass
+        </button>
 
-<div id="myDIV" style="display: none;">
-        <p class="word">arkisbuns19</p> 
-</div>
-   
-    <br/>
-    <h2>Server rates:</h2>
-    <p>
-        Player XP, 6x<br/>
-        Taming, 5x<br/>
-        Harvesting, 7x<br/>
-        Breeding, 10x<br/>
+        <div id="myDIV" style="display: none;">
+          <p class="word">arkisbuns19</p>
+        </div>
 
-    </p>
-    <br/>
-    <h2>Mod List:</h2>
-    <p>Ultra Stacks<br/>
-       Structures +<br/>
-       Wyvern World<br/>        
-    </p>   
-</div>
-</div>             
-    </body>
+        <br />
+        <h2>Server rates:</h2>
+        <p>
+          Player XP, 6x<br />
+          Taming, 5x<br />
+          Harvesting, 7x<br />
+          Breeding, 10x<br />
+        </p>
+        <br />
+        <h2>Mod List:</h2>
+        <p>
+          Ultra Stacks<br />
+          Structures +<br />
+          Wyvern World<br />
+        </p>
+      </div>
+    </div>
+  </body>
 </html>
