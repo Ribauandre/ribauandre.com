@@ -1,9 +1,7 @@
 {
-  "name": "gatsby-starter-portfolio-cara",
-  "description": "Playful & Colorful One-Page website with Parallax effect powered by react-spring, TailwindCSS.",
-  "version": "3.0.0",
-  "author": "LekoArts <hello@lekoarts.de> (https://www.lekoarts.de)",
-  "license": "MIT",
+  "name": "ribauandre.com",
+  "description": "Andre Ribau Personal Website",
+  "version": "1.0.0",
   "dependencies": {
     "babel-plugin-styled-components": "^1.10.0",
     "gatsby": "^2.3.4",
@@ -59,5 +57,5 @@
   "bugs": {
     "url": "https://github.com/LekoArts/gatsby-starter-portfolio-cara/issues"
   },
-  "homepage": "https://cara.lekoarts.de"
+  "homepage": "ribauandre.com"
 }

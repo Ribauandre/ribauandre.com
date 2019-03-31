@@ -66,10 +66,13 @@ const Index = () => (
         <BigTitle>
           Andre Ribau,
         </BigTitle>
-        <Subtitle>SRE/SE with a passion for all things tech. 👨‍💻</Subtitle>
+        <Subtitle>SRE/SE with a passion for all things tech 👨‍💻
+        <br/><p><smaller>ribauandre@yahoo.com | (347) 915-3973 </smaller></p>
+
+        </Subtitle>
       </Hero>
       <About offset={1}>
-        <Title>Work</Title>
+        <Title>Experience</Title>
         <AboutHero>
           <AboutSub>
           <b>Site Reliability Engineer & Associate Programmer Analyst / Broadridge Financial Solutions
@@ -90,6 +93,27 @@ const Index = () => (
         </AboutHero>
         <AboutDesc>
         Led and took part in the design, development, deployment, and support of a full stack company wide management application. (Skillsbank) Troubleshoot real-time production issues to ensure smooth running of impacted application within SLAs. Recommend solutions and identified required program corrections. Deployed production enhancements and analyzed program changes to ensure uninterrupted operation.
+        </AboutDesc>
+        <br/>
+        <AboutHero>
+          <AboutSub>
+          <b>Software developer / Penn State, The College of IST
+          </b>
+          <br/><i>Aug 2016 - Jan 2017</i>
+          </AboutSub>
+        </AboutHero>
+        <AboutDesc>
+        Worked with a team to debug a system written in Python that is used to rate Teaching Assistants. Released and tested patched versions of the system, and worked with users to better understand needs. Created and partook in team’s project management creating comprehensive plans and deadlines.
+        </AboutDesc>
+        <AboutHero>
+          <AboutSub>
+          <b>Web design & Web management Shadowing / Luce, Schwab & Kase, Inc.
+          </b>
+          <br/><i>May 2013 - Aug 2015</i>
+          </AboutSub>
+        </AboutHero>
+        <AboutDesc>
+        Shadowed Luce, Schwab & Kase, Inc.’s Website manager and developer. (lskair.com) Aided in maintaining the website using HTML/CSS. Helped design Luce, Schwab & Kase, Inc.’s website with interactive user design in mind.
         </AboutDesc>
       </About>
       <Projects offset={2}>
