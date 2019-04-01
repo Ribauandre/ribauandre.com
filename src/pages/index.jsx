@@ -60,7 +60,7 @@ const Footer = styled.footer`
 const Index = () => (
   <>
     <Layout />
-    <Parallax pages={8}>
+    <Parallax pages={9}>
       <Hero offset={0}>
         <Avatar src={avatar} alt="Andre Ribau" />
         <BigTitle>Andre Ribau,</BigTitle>
@@ -165,7 +165,7 @@ const Index = () => (
         </AboutDesc>
       </About>
 
-      <Projects offset={5}>
+      <Projects offset={6}>
         <Title>Skills</Title>
         <ProjectsWrapper>
           <ProjectCard title="Tech/Methodologies" bg="linear-gradient(to right, #D4145A 0%, #FBB03B 100%)"> 
@@ -213,13 +213,13 @@ const Index = () => (
         </ProjectsWrapper>
       </Projects>
 
-      <Contact offset={7}>
+      <Contact offset={8}>
         <Inner>
           <Title>Contact Me</Title>
           <ContactText>
             Feel free to email me <a href="mailto:ribauandre@yahoo.com">(ribauandre@yahoo.com)</a> or checkout my other links:{' '}
-            <a href="www.linkedin.com/in/ribauandre">LinkedIn</a> &{' '}
-            <a href="https://www.instagram.com/lekoarts.de/">GitHub</a>
+            <a href="https://www.linkedin.com/in/ribauandre">LinkedIn</a> &{' '}
+            <a href="https://github.com/Ribauandre">GitHub</a>
           </ContactText>
         </Inner>
         <Footer>
