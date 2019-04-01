@@ -168,47 +168,45 @@ const Index = () => (
       <Projects offset={6}>
         <Title>Skills</Title>
         <ProjectsWrapper>
-          <ProjectCard title="Tech/Methodologies" bg="linear-gradient(to right, #D4145A 0%, #FBB03B 100%)"> 
+          <ProjectCard title="Tech/Methodologies" bg="linear-gradient(to right, #D4145A 0%, #FBB03B 100%)">
             - Amazon Web Services
-            <br/>
+            <br />
             - Cloud Foundry
-            <br/>
+            <br />
             - Docker
-            <br/>
+            <br />
             - Agile
-            <br/>
+            <br />
             - Scrum
-            <br/>
+            <br />
             - Continuous Integration
-            <br/>
+            <br />
             - Test Driven Development
-            <br/>
+            <br />
             - Jenkins
-            <br/>
+            <br />
             - Linux
-            <br/>
+            <br />
             - Nosql (Marklogic, MongoDB)
-            <br/>
-            - RDB (MySql, AS400)
+            <br />- RDB (MySql, AS400)
           </ProjectCard>
           <ProjectCard title="Code" bg="linear-gradient(to right, #662D8C 0%, #ED1E79 100%)">
             - Java
-            <br/>
+            <br />
             - Python
-            <br/>
+            <br />
             - JavaScript
-            <br/>
+            <br />
             - Shell
-            <br/>
+            <br />
             - Terraform
-            <br/>
+            <br />
             - Yaml
-            <br/>
+            <br />
             - Groovy
-            <br/>
+            <br />
             - HTML, CSS
-            <br/>
-            - Jquery, JSTL
+            <br />- Jquery, JSTL
           </ProjectCard>
         </ProjectsWrapper>
       </Projects>
@@ -217,8 +215,8 @@ const Index = () => (
         <Inner>
           <Title>Contact Me</Title>
           <ContactText>
-            Feel free to email me <a href="mailto:ribauandre@yahoo.com">(ribauandre@yahoo.com)</a> or checkout my other links:{' '}
-            <a href="https://www.linkedin.com/in/ribauandre">LinkedIn</a> &{' '}
+            Feel free to email me <a href="mailto:ribauandre@yahoo.com">(ribauandre@yahoo.com)</a> or checkout my other
+            links: <a href="https://www.linkedin.com/in/ribauandre">LinkedIn</a> &{' '}
             <a href="https://github.com/Ribauandre">GitHub</a>
           </ContactText>
         </Inner>
