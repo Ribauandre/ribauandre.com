@@ -60,7 +60,7 @@ const Footer = styled.footer`
 const Index = () => (
   <>
     <Layout />
-    <Parallax pages={9}>
+    <Parallax pages={11}>
       <Hero offset={0}>
         <Avatar src={avatar} alt="Andre Ribau" />
         <BigTitle>Andre Ribau,</BigTitle>
@@ -68,11 +68,10 @@ const Index = () => (
           SRE/SE with a passion for all things tech 👨‍💻
           <br />
           ribauandre@yahoo.com | (347) 915-3973
-          <br />
         </Subtitle>
       </Hero>
 
-      <Projects offset={1}>
+      <Projects offset={2}>
         <Title>Projects</Title>
         <ProjectsWrapper>
           <ProjectCard
@@ -110,7 +109,7 @@ const Index = () => (
         </ProjectsWrapper>
       </Projects>
 
-      <About offset={4}>
+      <About offset={6}>
         <Title>Experience</Title>
         <AboutHero>
           <AboutSub>
@@ -165,10 +164,10 @@ const Index = () => (
         </AboutDesc>
       </About>
 
-      <Projects offset={6}>
+      <Projects offset={8}>
         <Title>Skills</Title>
         <ProjectsWrapper>
-          <ProjectCard title="Tech/Methodologies" bg="linear-gradient(to right, #D4145A 0%, #FBB03B 100%)"> 
+          <ProjectCard title="Tech" bg="linear-gradient(to right, #D4145A 0%, #FBB03B 100%)"> 
             - Amazon Web Services
             <br/>
             - Cloud Foundry
@@ -213,7 +212,7 @@ const Index = () => (
         </ProjectsWrapper>
       </Projects>
 
-      <Contact offset={8}>
+      <Contact offset={10}>
         <Inner>
           <Title>Contact Me</Title>
           <ContactText>
