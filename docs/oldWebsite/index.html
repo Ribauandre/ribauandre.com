@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html>
+<title>Andre Ribau | ribauandre.com</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta property="og:image" content="./WebContent/imgs/IMG_5527.jpg" />
+<link rel="shortcut icon" type="favicon.ico" href="./WebContent/imgs/logo.jpg" />
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel='stylesheet'
+	href='https://fonts.googleapis.com/css?family=Roboto'>
+<link rel="stylesheet"
+	href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+html, body, h1, h2, h3, h4, h5, h6 {
+	font-family: "Roboto", sans-serif
+}
+
+#aside {
+	position: relative;
+	margin: 0px 10px 10px 10px;
+
+	/* Make a little room */
+}
+
+#tab {
+	box-shadow: 4px 0 8px 0 rgba(0, 0, 0, 0.2),6px  0 20px 0 rgba(0, 0, 0, 0.19);
+	transition: 0.5s;
+	background: #009688;
+	color: #fff;
+	margin: 0px 10px 10px 10px;
+	/* Abs positioning makes it not take up vert space */
+	position: absolute;
+	top: 0;
+	left: 50px;
+	/* Border is the new background */
+	/* Rotate from top left corner (not default) */
+	-webkit-transform-origin: 0 0;
+	-moz-transform-origin: 0 0;
+	-ms-transform-origin: 0 0;
+	-o-transform-origin: 0 0;
+	-webkit-transform: rotate(90deg);
+	-moz-transform: rotate(90deg);
+	-ms-transform: rotate(90deg);
+	-o-transform: rotate(90deg);
+}
+
+.sidenav {
+	margin: 0 8px;
+	height: 100%;
+	width: 0;
+	position: fixed;
+	z-index: 1;
+	top: 0;
+	left: 0;
+	background: rgb(0, 80, 73);
+	background: linear-gradient(90deg, rgba(0, 80, 73, 1) 0%,
+		rgba(0, 150, 136, 1) 64%);
+	overflow-x: hidden;
+	transition: 0.5s;
+	padding-top: 25px;
+
+	box-shadow: 4px 0 8px 0 rgba(0, 0, 0, 0.2),6px  0 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.sidenav p {
+	
+	padding: 10px 10px 10px 10px;
+	display: block;
+	transition: 0.3s;
+}
+.sidenav h6 {
+	
+	padding: 8px 8px 8px 8px;
+	display: block;
+	transition: 0.3s;
+}
+.sidenav h3 {
+	
+	padding: 5px 5px 5px 5px;
+	display: block;
+	transition: 0.3s;
+}
+
+.sidenav a:hover {
+	color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+	position: absolute;
+	top: 0;
+	right: 25px;
+	font-size: 36px;
+	margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+	.sidenav {
+		padding-top: 15px;
+	}
+	.sidenav a {
+		font-size: 18px;
+	}
+}
+</style>
+<script>
+function openNav() {
+    document.getElementById("mySidenav").style.width = "75%";
+	document.getElementById("tab").style.display= "none";
+}
+
+function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+	document.getElementById("tab").style.display= "block";
+}
+</script>
+<body class="w3-light-grey">
+
+	<!-- Page Container -->
+	<div class="w3-content w3-margin-top" style="max-width: 1400px;">
+
+		<!-- The Grid -->
+		<div class="w3-row-padding">
+
+			<!-- Left Column -->
+
+			<div class="w3-third">
+
+				<div class="w3-white w3-text-grey w3-card-4">
+					<div class="w3-display-container">
+						<img src="./WebContent/imgs/ava.jpg" style="width: 100%"
+							alt="Avatar">
+						<div class="w3-display-bottomleft w3-container w3-text-black">
+							<h2 style="color: white;">Andre Ribau</h2>
+						</div>
+					</div>
+					<div id="tab" onclick="openNav()">
+						<h3 id="aside" style="font-size: 30px; cursor: pointer">Projects</h3>
+					</div>
+					<div class="w3-container">
+						<p>
+							<i
+								class="fa fa-briefcase fa-fw w3-margin-right w3-large w3-text-teal"></i>Developer
+						</p>
+						<p>
+							<i class="fa fa-home fa-fw w3-margin-right w3-large w3-text-teal"></i>New
+							Jersey, USA
+						</p>
+						<p>
+							<i
+								class="fa fa-envelope fa-fw w3-margin-right w3-large w3-text-teal"></i>Ribauandre@yahoo.com
+						</p>
+						<p>
+							<i
+								class="fa fa-phone fa-fw w3-margin-right w3-large w3-text-teal"></i>(347) 915-3973
+						</p>
+						<hr>
+
+						<p class="w3-large">
+							<b><i
+								class="fa fa-asterisk fa-fw w3-margin-right w3-text-teal"></i>Skills</b>
+						</p>
+						<p>Java</p>
+						<div class="w3-light-grey w3-round-xlarge w3-small">
+							<div class="w3-container w3-center w3-round-xlarge w3-teal"
+								style="width: 90%">90%</div>
+						</div>
+						<p>J2EE (AJAX, HTML, CSS, JavaScript, Jquery, and JSTL)</p>
+						<div class="w3-light-grey w3-round-xlarge w3-small">
+							<div class="w3-container w3-center w3-round-xlarge w3-teal"
+								style="width: 80%">
+								<div class="w3-center w3-text-white">80%</div>
+							</div>
+						</div>
+						<p>SQL</p>
+						<div class="w3-light-grey w3-round-xlarge w3-small">
+							<div class="w3-container w3-center w3-round-xlarge w3-teal"
+								style="width: 75%">75%</div>
+						</div>
+						<p>R</p>
+						<div class="w3-light-grey w3-round-xlarge w3-small">
+							<div class="w3-container w3-center w3-round-xlarge w3-teal"
+								style="width: 25%">25%</div>
+						</div>
+						<br>
+
+						<p class="w3-large w3-text-theme">
+							<b><i class="fa fa-globe fa-fw w3-margin-right w3-text-teal"></i>Languages</b>
+						</p>
+						<p>English</p>
+						<div class="w3-light-grey w3-round-xlarge">
+							<div class="w3-round-xlarge w3-teal"
+								style="height: 24px; width: 100%"></div>
+						</div>
+						<p>Portuguese</p>
+						<div class="w3-light-grey w3-round-xlarge">
+							<div class="w3-round-xlarge w3-teal"
+								style="height: 24px; width: 90%"></div>
+						</div>
+						<p>Spanish</p>
+						<div class="w3-light-grey w3-round-xlarge">
+							<div class="w3-round-xlarge w3-teal"
+								style="height: 24px; width: 80%"></div>
+						</div>
+						<br>
+					</div>
+				</div>
+				<br>
+
+				<!-- End Left Column -->
+			</div>
+
+			<div id="mySidenav" class="sidenav">
+				<h1 style="color: white;">
+					Projects
+					</h1>
+					<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+					<h3 style="color: white;">LibraryLender</h3>
+					<h6 class="w3-text-teal">
+						<i class="fa fa-calendar fa-fw w3-margin-right"></i>May 2018 - Jun 2018
+					</h6>
+					<p style="color: white;"><a href="https://thawing-citadel-50331.herokuapp.com/">LibraryLender</a> Uses MongoDB Atlas cloud data-base on an elastic cluster. Node.js Express as the application server. Then React as the front-end technology and Heroku for deployment. This MERN stack was used to create a fast, responsive Library system that allows a user to Donate a book, Borrow/Return a book, or Delete the book. Please feel free to add a book!
+
+					</p>
+					<h3 style="color: white;">SkillsBank</h3>
+					<h6 class="w3-text-teal">
+						<i class="fa fa-calendar fa-fw w3-margin-right"></i>Jul 2017 - Jan 2018
+					</h6>
+					<p style="color: white;">Utilizes full stack J2EE, AS400, and
+						WebSphere, to deliver an application that allows an associate to
+						rate themselves on many different subjects and gain recognition
+						for what they may know while also allowing managers to identify
+						gaps in skill and lead an associate to develop their skills. Led a
+						team in an agile environment delegating sprints and holding SCRUM
+						meetings to ensure strict deadlines were meet</p>
+					<h3 style="color: white;">Region Compare Utility</h3>
+					<h6 class="w3-text-teal">
+						<i class="fa fa-calendar fa-fw w3-margin-right"></i>Jul 2017 - Jan
+						2018
+					</h6>
+					<p style="color: white;">This utility was made in a full stack
+						JEE for use by the client services department to effectively
+						compare multiple client regions across different LPARS. This is
+						achieved by running as400 commands to create an overview object
+						and then SQL commands to read in the data to java which then
+						quantities and displays the differences between the regions in a
+						simple and user friendly manner.</p>
+
+
+					<h3 style="color: white;">BudgetTime.io</h3>
+					<h6 class="w3-text-teal">
+						<i class="fa fa-calendar fa-fw w3-margin-right"></i>Feb 2017 - 
+						May 2017
+					</h6>
+					<p style="color: white;">A stand alone application that uses MySql as a database, Java
+						in the middle and JavaFX as the front-end. This application allows you to create an account 
+						and set categories in which you are allowed to alot a precentage of your net income to. 
+						It then takes that information and creates charts and graphs that shows how much 
+						of your money goes into each category. 
+					</p>
+
+					<div style="width:100%; text-align: center;">
+						<p style="color: #C0C0C0"> All of the source code for these projects and others can be found on Github! </p>
+						<a href="https://github.com/Ribauandre" class="fa fa-github w3-hover-opacity"></a>
+					</div>
+					
+			</div>
+			<!-- Right Column -->
+			<div class="w3-twothird">
+
+				<div class="w3-container w3-card w3-white w3-margin-bottom">
+					<h2 class="w3-text-grey w3-padding-16">
+						<i
+							class="fa fa-suitcase fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Work
+						Experience
+					</h2>
+
+					<div class="w3-container">
+						<h5 class="w3-opacity">
+							<b>Site Reliability Engineer & Associate Programmer Analyst / Broadridge Financial
+								Solutions.</b>
+						</h5>
+						<h6 class="w3-text-teal">
+							<i class="fa fa-calendar fa-fw w3-margin-right"></i>Jul 2018 - <span
+								class="w3-tag w3-teal w3-round">Current</span>
+						</h6>
+						<p>Participate in every aspect of the software life cycle from completing sprints to production deployments. Through daily stand up meetings, sprint cycles, and test driven development insuring a high standard of code quality. 
+							Work with cross functional teams to meet development and deployment needs, creating an effective CI/CD pipeline, automated testing, and self healing.
+							Developed and implement a REST api (Data Fabric) that is used by multiple high profile clients today
+							</p>
+						<hr>
+					</div>
+				
+
+
+
+
+
+					<div class="w3-container">
+						<h5 class="w3-opacity">
+							<b>Java Developer & Associate Programmer Analyst / Broadridge Financial
+								Solutions.</b>
+						</h5>
+						<h6 class="w3-text-teal">
+							<i class="fa fa-calendar fa-fw w3-margin-right"></i>Jul 2017 - Jul 2018
+						</h6>
+						<p>Led and took part in the design, development, deployment,
+							and support of a full stack company wide management application.
+							(Skillsbank) Troubleshoot real-time production issues to ensure
+							smooth running of impacted application within SLAs. Recommend
+							solutions and identified required program corrections. Deployed
+							production enhancements and analyzed program changes to ensure
+							uninterrupted operation.</p>
+						<hr>
+					</div>
+					<div class="w3-container">
+						<h5 class="w3-opacity">
+							<b>Software developer / Penn State, The College of IST</b>
+						</h5>
+						<h6 class="w3-text-teal">
+							<i class="fa fa-calendar fa-fw w3-margin-right"></i>Aug 2016 -
+							Jan 2017
+						</h6>
+						<p>Worked with a team to debug a system written in Python that
+							is used to rate Teaching Assistants. Released and tested patched
+							versions of the system, and worked with users to better
+							understand needs. Created and partook in team’s project
+							management creating comprehensive plans and deadlines.</p>
+						<hr>
+					</div>
+
+
+
+					<div class="w3-container">
+						<h5 class="w3-opacity">
+							<b>Web design & Web management Shadowing / Luce, Schwab &
+								Kase, Inc. </b>
+						</h5>
+						<h6 class="w3-text-teal">
+							<i class="fa fa-calendar fa-fw w3-margin-right"></i>May 2013 -
+							Aug 2015
+						</h6>
+						<p>Shadowed Luce, Schwab & Kase, Inc.’s Website manager and
+							developer. (lskair.com) Aided in maintaining the website using
+							HTML/CSS. Helped design Luce, Schwab & Kase, Inc.’s website with
+							interactive user design in mind.</p>
+						<br>
+					</div>
+				</div>
+
+				<div class="w3-container w3-card w3-white">
+					<h2 class="w3-text-grey w3-padding-16">
+						<i
+							class="fa fa-certificate fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Education
+					</h2>
+					<div class="w3-container">
+						<h5 class="w3-opacity">
+							<b>The Pennsylvania State University, University Park</b>
+						</h5>
+						<h6 class="w3-text-teal">
+							<i class="fa fa-calendar fa-fw w3-margin-right"></i>Graduated:
+							May 2017
+						</h6>
+						<p>Bachelor of Science: Information Sciences and Technology,
+							Design and Development</p>
+						<br>
+					</div>
+				</div>
+
+				<!-- End Right Column -->
+			</div>
+
+			<!-- End Grid -->
+		</div>
+
+		<!-- End Page Container -->
+	</div>
+
+
+
+
+
+	<footer class="w3-container w3-teal w3-center w3-margin-top">
+		<p>Find me on linkedin and Github.</p>
+		<a href="https://www.linkedin.com/in/ribauandre/" class="fa fa-linkedin w3-hover-opacity"></a>
+		<a href="https://github.com/Ribauandre" class="fa fa-github w3-hover-opacity"></a>
+
+	</footer>
+
+</body>
+</html>
