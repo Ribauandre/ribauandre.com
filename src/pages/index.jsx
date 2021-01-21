@@ -60,7 +60,7 @@ const Footer = styled.footer`
 const Index = () => (
   <>
     <Layout />
-    <Parallax pages={11}>
+    <Parallax pages={5}>
       <Hero offset={0}>
         <Avatar src={avatar} alt="Andre Ribau" />
         <BigTitle>Andre Ribau,</BigTitle>
@@ -71,45 +71,7 @@ const Index = () => (
         </Subtitle>
       </Hero>
 
-      <Projects offset={2}>
-        <Title>Projects</Title>
-        <ProjectsWrapper>
-          <ProjectCard
-            title="Library-Lender"
-            link="https://thawing-citadel-50331.herokuapp.com/"
-            bg="linear-gradient(to right, #D4145A 0%, #FBB03B 100%)"
-          >
-            Uses MongoDB Atlas cloud data-base on an elastic cluster. Node.js Express as the application server. Then
-            React as the front-end technology and Heroku for deployment. This MERN stack was used to create a fast,
-            responsive Library system that allows a user to Donate a book, Borrow/Return a book, or Delete the book.
-            Please feel free to add a book!
-          </ProjectCard>
-          <ProjectCard title="SkillsBank" bg="linear-gradient(to right, #662D8C 0%, #ED1E79 100%)">
-            Utilizes full stack J2EE, AS400, and WebSphere, to deliver an application that allows an associate to rate
-            themselves on many different subjects and gain recognition for what they may know while also allowing
-            managers to identify gaps in skill and lead an associate to develop their skills. Led a team in an agile
-            environment delegating sprints and holding SCRUM meetings to ensure strict deadlines were meet
-          </ProjectCard>
-          <ProjectCard
-            title="BudgetTime.io"
-            link="https://github.com/Ribauandre/BudgetTime.io"
-            bg="linear-gradient(to right, #009245 0%, #FCEE21 100%)"
-          >
-            A stand alone application that uses MySql as a database, Java in the middle and JavaFX as the front-end.
-            This application allows you to create an account and set categories in which you are allowed to alot a
-            precentage of your net income to. It then takes that information and creates charts and graphs that shows
-            how much of your money goes into each category.
-          </ProjectCard>
-          <ProjectCard title="Region Compare Utility" bg="linear-gradient(to right, #D585FF 0%, #00FFEE 100%)">
-            This utility was made in a full stack JEE for use by the client services department to effectively compare
-            multiple client regions across different LPARS. This is achieved by running as400 commands to create an
-            overview object and then SQL commands to read in the data to java which then quantities and displays the
-            differences between the regions in a simple and user friendly manner.
-          </ProjectCard>
-        </ProjectsWrapper>
-      </Projects>
-
-      <About offset={6}>
+      <About offset={1}>
         <Title>Experience</Title>
         <AboutHero>
           <AboutSub>
@@ -164,7 +126,45 @@ const Index = () => (
         </AboutDesc>
       </About>
 
-      <Projects offset={8}>
+      <Projects offset={2}>
+              <Title>Projects</Title>
+              <ProjectsWrapper>
+                <ProjectCard
+                  title="Library-Lender"
+                  link="https://thawing-citadel-50331.herokuapp.com/"
+                  bg="linear-gradient(to right, #D4145A 0%, #FBB03B 100%)"
+                >
+                  Uses MongoDB Atlas cloud data-base on an elastic cluster. Node.js Express as the application server. Then
+                  React as the front-end technology and Heroku for deployment. This MERN stack was used to create a fast,
+                  responsive Library system that allows a user to Donate a book, Borrow/Return a book, or Delete the book.
+                  Please feel free to add a book!
+                </ProjectCard>
+                <ProjectCard title="SkillsBank" bg="linear-gradient(to right, #662D8C 0%, #ED1E79 100%)">
+                  Utilizes full stack J2EE, AS400, and WebSphere, to deliver an application that allows an associate to rate
+                  themselves on many different subjects and gain recognition for what they may know while also allowing
+                  managers to identify gaps in skill and lead an associate to develop their skills. Led a team in an agile
+                  environment delegating sprints and holding SCRUM meetings to ensure strict deadlines were meet
+                </ProjectCard>
+                <ProjectCard
+                  title="BudgetTime.io"
+                  link="https://github.com/Ribauandre/BudgetTime.io"
+                  bg="linear-gradient(to right, #009245 0%, #FCEE21 100%)"
+                >
+                  A stand alone application that uses MySql as a database, Java in the middle and JavaFX as the front-end.
+                  This application allows you to create an account and set categories in which you are allowed to alot a
+                  precentage of your net income to. It then takes that information and creates charts and graphs that shows
+                  how much of your money goes into each category.
+                </ProjectCard>
+                <ProjectCard title="Region Compare Utility" bg="linear-gradient(to right, #D585FF 0%, #00FFEE 100%)">
+                  This utility was made in a full stack JEE for use by the client services department to effectively compare
+                  multiple client regions across different LPARS. This is achieved by running as400 commands to create an
+                  overview object and then SQL commands to read in the data to java which then quantities and displays the
+                  differences between the regions in a simple and user friendly manner.
+                </ProjectCard>
+              </ProjectsWrapper>
+            </Projects>
+
+      <Projects offset={3}>
         <Title>Skills</Title>
         <ProjectsWrapper>
           <ProjectCard title="Tech" bg="linear-gradient(to right, #D4145A 0%, #FBB03B 100%)"> 
@@ -212,7 +212,7 @@ const Index = () => (
         </ProjectsWrapper>
       </Projects>
 
-      <Contact offset={10}>
+      <Contact offset={4}>
         <Inner>
           <Title>Contact Me</Title>
           <ContactText>
