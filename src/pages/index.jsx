@@ -25,11 +25,11 @@ const ProjectsWrapper = styled.div`
   grid-gap: 4rem;
   grid-template-columns: repeat(2, 1fr);
   @media (max-width: 1200px) {
-    grid-gap: 3rem;
+    grid-gap: 4rem;
   }
   @media (max-width: 900px) {
     grid-template-columns: 1fr;
-    grid-gap: 3rem;
+    grid-gap: 4rem;
   }
 `
 
