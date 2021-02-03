@@ -2,6 +2,13 @@ import React from 'react'
 import styled from 'styled-components'
 import tw from 'tailwind.macro'
 import { Parallax } from 'react-spring/renderprops-addons.cjs'
+import { Gi3DHammer } from "react-icons/gi";
+import { FaGithubSquare } from "react-icons/fa";
+import { FaLinkedin } from "react-icons/fa";
+import { FaEnvelopeSquare } from "react-icons/fa";
+
+
+
 
 // Components
 import Layout from '../components/Layout'
@@ -34,7 +41,7 @@ const ProjectsWrapper = styled.div`
 `
 
 const AboutHero = styled.div`
-  ${tw`flex flex-col lg:flex-row items-center mt-8`};
+  ${tw`text-center flex flex-col lg:flex-row items-center mt-8`};
 `
 
 const Avatar = styled.img`
@@ -42,7 +49,7 @@ const Avatar = styled.img`
 `
 
 const AboutSub = styled.span`
-  ${tw`text-white pt-12 lg:pt-0 lg:pl-12 text-2xl lg:text-3xl xl:text-4xl`};
+  ${tw` text-center text-white pt-12 lg:pt-0 lg:pl-12 text-2xl lg:text-3xl xl:text-4xl`};
 `
 
 const AboutDesc = styled.p`
@@ -50,7 +57,7 @@ const AboutDesc = styled.p`
 `
 
 const ContactText = styled.p`
-  ${tw`text-grey-light font-sans text-xl md:text-2xl lg:text-3xl`};
+  ${tw`text-blue font-sans text-xl md:text-2xl lg:text-3xl`};
 `
 
 const Footer = styled.footer`
@@ -63,18 +70,19 @@ const Index = () => (
     <Parallax pages={1}>
       <Hero offset={0}>
         <Avatar src={avatar} alt="Andre Ribau" />
-        <BigTitle>Andre Ribau</BigTitle>
+        <BigTitle>Andre Ribau </BigTitle>
         <Subtitle>
-          SRE/SE with a passion for all things tech 👨‍💻
-          <br />
-            <ContactText>
-                Feel free to email me <a href="mailto:ribauandre@yahoo.com">(ribauandre@yahoo.com)</a> or checkout my other links:{' '}
-                 <a href="https://www.linkedin.com/in/ribauandre">LinkedIn</a> &{' '}
-                <a href="https://github.com/Ribauandre">GitHub</a>
-            </ContactText>
+          <Gi3DHammer /> SRE/SWE at Broadridge, with a passion for all things tech!
         </Subtitle>
+        <br/>
+         <ContactText>
+         <BigTitle>
+          <a href="https://github.com/Ribauandre"><FaGithubSquare /></a>
+          <a href="mailto:ribauandre@yahoo.com"><FaEnvelopeSquare /></a>
+          <a href="https://www.linkedin.com/in/ribauandre"><FaLinkedin /></a>
+          </BigTitle>
+         </ContactText>
       </Hero>
-
     </Parallax>
   </>
 )
