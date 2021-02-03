@@ -19,6 +19,7 @@ const GlobalStyle = createGlobalStyle`
     height: 100%;
     margin: 0;
     padding: 0;
+    font-family: 'Courier New', monospace;
   }
   a {
     color: #e07628;

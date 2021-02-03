@@ -4,9 +4,11 @@ import styled, { keyframes, css } from 'styled-components'
 const rotate = keyframes`
   from {
     transform: rotate(0deg);
+    fill: transparent;
   }
   to {
     transform: rotate(360deg);
+    fill: white;
   }
 `
 

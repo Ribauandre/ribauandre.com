@@ -60,30 +60,21 @@ const Footer = styled.footer`
 const Index = () => (
   <>
     <Layout />
-    <Parallax pages={2}>
+    <Parallax pages={1}>
       <Hero offset={0}>
         <Avatar src={avatar} alt="Andre Ribau" />
-        <BigTitle>Andre Ribau,</BigTitle>
+        <BigTitle>Andre Ribau</BigTitle>
         <Subtitle>
           SRE/SE with a passion for all things tech 👨‍💻
           <br />
-          ribauandre@yahoo.com | (347) 915-3973
+            <ContactText>
+                Feel free to email me <a href="mailto:ribauandre@yahoo.com">(ribauandre@yahoo.com)</a> or checkout my other links:{' '}
+                 <a href="https://www.linkedin.com/in/ribauandre">LinkedIn</a> &{' '}
+                <a href="https://github.com/Ribauandre">GitHub</a>
+            </ContactText>
         </Subtitle>
       </Hero>
 
-      <Contact offset={1}>
-        <Inner>
-          <Title>Contact Me</Title>
-          <ContactText>
-            Feel free to email me <a href="mailto:ribauandre@yahoo.com">(ribauandre@yahoo.com)</a> or checkout my other links:{' '}
-            <a href="https://www.linkedin.com/in/ribauandre">LinkedIn</a> &{' '}
-            <a href="https://github.com/Ribauandre">GitHub</a>
-          </ContactText>
-        </Inner>
-        <Footer>
-          <a href="https://github.com/Ribauandre/ribauandre.com">Source Code</a>
-        </Footer>
-      </Contact>
     </Parallax>
   </>
 )
