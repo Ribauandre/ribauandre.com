@@ -9,7 +9,7 @@ import { UpDown, UpDownWide } from '../styles/animations'
 import SVG from '../components/SVG'
 
 const Wrapper = styled.div`
-  ${tw`w-full xl:w-2/3`};
+  ${tw`w-full lg:w-2/3`};
 `
 
 const Hero = ({ children, offset }) => (

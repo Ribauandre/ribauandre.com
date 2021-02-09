@@ -47,9 +47,22 @@ const AboutHero = styled.div`
 const Avatar = styled.img`
   ${tw`rounded-full w-32 xl:w-48 shadow-lg h-auto`};
 `
+const AvatarWrapper = styled.div`
+  ${tw`items-center flex`};
+  margin:0 auto;
+  justify-content: center;
+`
+const LinkWrapper = styled.div`
+  ${tw`items-center flex`};
+  width: 100%
+  justify-content: center;
+  a {
+  padding: 10px
+  }
+`
 
 const AboutSub = styled.span`
-  ${tw` text-center text-white pt-12 lg:pt-0 lg:pl-12 text-2xl lg:text-3xl xl:text-4xl`};
+  ${tw`text-center text-white pt-12 lg:pt-0 lg:pl-12 text-2xl lg:text-3xl xl:text-4xl`};
 `
 
 const AboutDesc = styled.p`
@@ -67,22 +80,64 @@ const Footer = styled.footer`
 const Index = () => (
   <>
     <Layout />
-    <Parallax pages={1}>
-      <Hero offset={0}>
+    <Parallax pages={2.5}>
+      <Hero offset={0} factor={1}>
+        <AvatarWrapper>
         <Avatar src={avatar} alt="Andre Ribau" />
-        <BigTitle>Andre Ribau </BigTitle>
+        </AvatarWrapper>
+        <BigTitle><span>Andre Ribau</span> </BigTitle>
+         <BigTitle>
+        <Gi3DHammer />
+        </BigTitle>
         <Subtitle>
-          <Gi3DHammer /> SRE/SWE at Broadridge, with a passion for all things tech!
+          SRE/SWE at Broadridge with a passion for all things tech!
         </Subtitle>
         <br/>
-         <ContactText>
          <BigTitle>
+         <LinkWrapper>
           <a href="https://github.com/Ribauandre"><FaGithubSquare /></a>
           <a href="mailto:ribauandre@yahoo.com"><FaEnvelopeSquare /></a>
           <a href="https://www.linkedin.com/in/ribauandre"><FaLinkedin /></a>
+          </LinkWrapper>
           </BigTitle>
-         </ContactText>
       </Hero>
+      <Projects offset={1} factor={2}>
+                    <Title>Projects</Title>
+                    <ProjectsWrapper>
+                      <ProjectCard
+                        title="Library-Lender"
+                        link="https://thawing-citadel-50331.herokuapp.com/"
+                        bg="linear-gradient(to right, #D4145A 0%, #FBB03B 100%)"
+                      >
+                        Uses MongoDB Atlas cloud data-base on an elastic cluster. Node.js Express as the application server. Then
+                        React as the front-end technology and Heroku for deployment. This MERN stack was used to create a fast,
+                        responsive Library system that allows a user to Donate a book, Borrow/Return a book, or Delete the book.
+                        Please feel free to add a book!
+                      </ProjectCard>
+                      <ProjectCard title="SkillsBank" bg="linear-gradient(to right, #662D8C 0%, #ED1E79 100%)">
+                        Utilizes full stack J2EE, AS400, and WebSphere, to deliver an application that allows an associate to rate
+                        themselves on many different subjects and gain recognition for what they may know while also allowing
+                        managers to identify gaps in skill and lead an associate to develop their skills. Led a team in an agile
+                        environment delegating sprints and holding SCRUM meetings to ensure strict deadlines were meet
+                      </ProjectCard>
+                      <ProjectCard
+                        title="BudgetTime.io"
+                        link="https://github.com/Ribauandre/BudgetTime.io"
+                        bg="linear-gradient(to right, #009245 0%, #FCEE21 100%)"
+                      >
+                        A stand alone application that uses MySql as a database, Java in the middle and JavaFX as the front-end.
+                        This application allows you to create an account and set categories in which you are allowed to alot a
+                        precentage of your net income to. It then takes that information and creates charts and graphs that shows
+                        how much of your money goes into each category.
+                      </ProjectCard>
+                      <ProjectCard title="Region Compare Utility" bg="linear-gradient(to right, #D585FF 0%, #00FFEE 100%)">
+                        This utility was made in a full stack JEE for use by the client services department to effectively compare
+                        multiple client regions across different LPARS. This is achieved by running as400 commands to create an
+                        overview object and then SQL commands to read in the data to java which then quantities and displays the
+                        differences between the regions in a simple and user friendly manner.
+                      </ProjectCard>
+                    </ProjectsWrapper>
+                  </Projects>
     </Parallax>
   </>
 )

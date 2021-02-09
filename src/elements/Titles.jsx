@@ -20,11 +20,12 @@ export const Title = styled.h1`
 `
 
 export const BigTitle = styled.h1`
-  ${tw`text-5xl lg:text-6xl font-mono text-white mb-6 tracking-wide`};
+  ${tw`text-5xl lg:text-6xl flex items-center font-mono text-white mb-6 tracking-wide text-center`};
   text-shadow: 0 5px 35px rgba(255, 255, 255, 0.15);
+  justify-content: center;
 `
 
 export const Subtitle = styled.p`
-  ${tw`text-2xl lg:text-4xl font-mono text-white mt-8 xxl:w-3/4`};
+  ${tw`text-2xl lg:text-4xl font-mono text-white mt-8 xxl:w-3/4 text-center`};
   text-shadow: 0 2px 15px rgba(0, 0, 0, 0.2);
 `
