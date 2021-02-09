@@ -5,7 +5,6 @@ import { Parallax } from 'react-spring/renderprops-addons.cjs'
 import { Gi3DHammer } from "react-icons/gi";
 import { FaGithubSquare } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
-import { FaEnvelopeSquare } from "react-icons/fa";
 
 
 
@@ -139,7 +138,6 @@ const Index = () => (
         <BigTitle>
         <LinkWrapper>
          <a href="https://github.com/Ribauandre"><FaGithubSquare /></a>
-         <a href="mailto:ribauandre@yahoo.com"><FaEnvelopeSquare /></a>
          <a href="https://www.linkedin.com/in/ribauandre"><FaLinkedin /></a>
          </LinkWrapper>
          </BigTitle>
