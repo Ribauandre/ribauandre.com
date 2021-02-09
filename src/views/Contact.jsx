@@ -17,7 +17,7 @@ const InnerWave = styled.div`
   ${tw`relative h-full`};
   svg {
     width: 100%;
-    height: 40vh;
+    height: 60vh;
   }
   path {
     ${waveAnimation('20s')};
