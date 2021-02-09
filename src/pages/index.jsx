@@ -80,7 +80,7 @@ const Footer = styled.footer`
 const Index = () => (
   <>
     <Layout />
-    <Parallax pages={2.5}>
+    <Parallax pages={3}>
       <Hero offset={0} factor={1}>
         <AvatarWrapper>
         <Avatar src={avatar} alt="Andre Ribau" />
